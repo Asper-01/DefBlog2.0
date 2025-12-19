@@ -15,7 +15,7 @@
           Rubriques
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <% Tag.where(id: [59, 60, 61, 62, 43]).each do |tag| %>
+          <% Tag.where(name: [:Terre, :Mer, :Air, :France,]).each do |tag| %>
             <a class="dropdown-item" href="<%= tag_path(tag) %>">
               <%= tag.name %>
             </a>
